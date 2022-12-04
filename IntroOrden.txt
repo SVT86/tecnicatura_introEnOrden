@@ -1,0 +1,22 @@
+pre { mtx tiene que estar ordenado en forma ascendente , 0 <= ce < MAX}
+
+procedimiento IntroEnOrden (ref mtx: T_array_int,ref ce:entero,val dato:entero)
+
+mientras (i >= 1) Y (NO esta) hacer
+
+    si (mtx[i] > dato) entonces
+        mtx[i+1] <- mtx[i]
+        i <- i-1
+    sino
+        esta <- VERDADERO
+    fin si
+
+finMientras
+
+mtx[i+1] <- dato
+
+ce <- ce + 1
+
+finProcedimiento
+
+
